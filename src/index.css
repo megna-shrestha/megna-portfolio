@@ -1,0 +1,89 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 252 56% 57%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 327 70% 69%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.75rem;
+
+    --sidebar-background: 240 10% 3.9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 252 56% 57%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-white/10 selection:text-white;
+  }
+  
+  body {
+    @apply bg-dark-background text-dark-text antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 shadow-lg;
+  }
+  
+  .section-heading {
+    @apply text-2xl md:text-3xl font-bold mb-6 relative inline-block;
+  }
+  
+  .section-heading::after {
+    content: '';
+    @apply absolute left-0 -bottom-2 w-1/2 h-1 bg-gradient-accent rounded-full;
+  }
+
+  .neon-border {
+    @apply border border-transparent;
+    box-shadow: 0 0 5px theme('colors.dark.accent1'), 
+                inset 0 0 5px theme('colors.dark.accent1');
+  }
+  
+  .neon-border-accent2 {
+    @apply border border-transparent;
+    box-shadow: 0 0 5px theme('colors.dark.accent2'), 
+                inset 0 0 5px theme('colors.dark.accent2');
+  }
+
+  .typed-cursor {
+    @apply inline-block w-2 h-6 ml-1 align-middle bg-primary animate-blink;
+  }
+
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-accent animate-rotate-gradient;
+    background-size: 200% 200%;
+  }
+}
