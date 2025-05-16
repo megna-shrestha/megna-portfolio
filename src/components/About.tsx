@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -69,7 +68,7 @@ const About = () => {
               )}
               style={{ animationDelay: "0.3s" }}
             >
-              I'm Megna Shrestha, a creative and detail-oriented UI/UX Engineer with over 3 years of experience in web and mobile design, branding, and responsive frontend development. I am skilled in wireframing, prototyping, and user-centric design practices using tools like Figma and Adobe Creative Suite.
+              I'm Megna Shrestha, a creative and detail-oriented UI/UX Designer with over 3 years of experience in web and mobile design, branding. I am skilled in wireframing, prototyping, and user-centric design practices using tools like Figma and Adobe Creative Suite.
             </p>
 
             <p
@@ -79,7 +78,7 @@ const About = () => {
               )}
               style={{ animationDelay: "0.4s" }}
             >
-              I graduated from Deerwalk Institute of Technology with a Bachelor's degree in Science of Computer Science and Information Technology. Currently, I'm working as a UI/UX Designer at Whovian Soft Pvt. Ltd in Kathmandu, Nepal. I'm actively seeking full-time opportunities in the UAE with immediate availability to relocate.
+              I graduated from Deerwalk Institute of Technology with a Bachelor's degree in Science of Computer Science and Information Technology. Currently, I'm working as a UI/UX Designer at Whovian Soft Pvt. Ltd in Kathmandu, Nepal. 
             </p>
 
             <div
@@ -100,11 +99,11 @@ const About = () => {
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block w-1.5 h-1.5 bg-dark-accent1 rounded-full mr-2"></span>
-                    Brand Identity
+                   Grapgic Design
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block w-1.5 h-1.5 bg-dark-accent1 rounded-full mr-2"></span>
-                    Frontend Development
+                    Branding
                   </li>
                 </ul>
               </div>
@@ -116,11 +115,11 @@ const About = () => {
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <span className="inline-block w-1.5 h-1.5 bg-dark-accent2 rounded-full mr-2"></span>
-                    Figma, Adobe XD
+                    Figma
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block w-1.5 h-1.5 bg-dark-accent2 rounded-full mr-2"></span>
-                    Adobe Illustrator, Photoshop
+                    Adobe Illustrator, Photoshop, After Effects
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block w-1.5 h-1.5 bg-dark-accent2 rounded-full mr-2"></span>
@@ -136,6 +135,7 @@ const About = () => {
                 isInView && "animate-fade-in"
               )}
               style={{ animationDelay: "0.6s" }}
+              onClick={() => window.open('https://dribbble.com/megna-1', '_blank')}
             >
               <Download size={16} className="mr-2" /> Download CV
             </Button>

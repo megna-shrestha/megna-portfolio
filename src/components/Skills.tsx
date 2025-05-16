@@ -7,13 +7,13 @@ const skillsData = [
   {
     icon: <Palette size={32} />,
     category: "UI/UX Design",
-    skills: ["User Research", "Wireframing", "Prototyping", "Usability Testing", "Interaction Design", "Information Architecture"],
+    skills: ["User Research","User Interface", "Wireframing", "Prototyping", "Usability Testing", "Interaction Design", "Information Architecture", "Market Research"],
     color: "dark-accent1",
   },
   {
     icon: <Brush size={32} />,
     category: "Graphic Design",
-    skills: ["Brand Identity", "Logo Design", "Adobe Illustrator", "Adobe Photoshop", "Marketing Graphics", "Digital Assets"],
+    skills: ["Brand Identity", "Logo Design", "Adobe Illustrator", "Adobe Photoshop", "Marketing Graphics", "Digital Assets","Logo Design", "Visual Identity","Typography","Color Theory"],
     color: "dark-accent2",
   },
   {

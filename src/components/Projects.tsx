@@ -10,7 +10,7 @@ const projects = [
     title: "RCA E-commerce Website Design",
     description: "Defined brand guidelines, color palette, typography, spacing system, icons, and responsive grid layout. Created complete website flow, wireframes and high-fidelity interactive prototypes using Figma.",
     category: "UI/UX Design",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    image: "/assets/admin.png",
     link: "#"
   },
   {
@@ -18,47 +18,95 @@ const projects = [
     title: "Dragon Pain Relief Website Revamp",
     description: "Revamped the existing web UI to enhance visual consistency and user experience. Redesigned shop and product pages to optimize customer funneling and improve SEO-friendly content layout.",
     category: "UI/UX Design",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: "/assets/admin.png",
     link: "#"
   },
   {
     id: 3,
     title: "Deerwalk Auto Services Mobile App",
     description: "Led the UI/UX design for a mobile app offering auto services. Designed full application flow with a focus on user control, navigation, and responsiveness. Collaborated with frontend developers to ensure design accuracy.",
-    category: "UI/UX Design",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    link: "#"
+    category: "UDesignI/UX Design",
+    image: "/assets/mobileapp.png",
+    link: "https://dribbble.com/shots/23813999-Mobile-UI-UX"
   },
   {
     id: 4,
     title: "Ryan Energy – Branding & Product Graphics",
-    description: "Designed marketing and promotional graphics for e-vehicle products (e-rickshaw, e-scooter). Created product brochures, defined brand typography and color schemes aligned with the brand vision.",
+    description: "Designed marketing and promotional graphics for e-vehicle products (e-rickshaw). Created product brochures, defined brand typography and color schemes aligned with the brand vision.",
     category: "Graphic Design",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-    link: "#"
+    image: "/assets/tempo.png",
+    link: "https://dribbble.com/shots/23817330-Brochure-Design"
   },
   {
     id: 5,
     title: "Bala Style Station – Logo & Graphic Design",
     description: "Developed company logo, brand colors, and font system. Created social media graphics and business cards for brand identity and promotion.",
-    category: "Graphic Design",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    link: "#"
+    category: "Graphic ",
+    image: "/assets/project-img1.png",
+    link: "https://dribbble.com/shots/23817483-Simple-and-Elegant-Visiting-card"
   },
   {
     id: 6,
-    title: "USAID Application Frontend",
-    description: "Assisted in frontend slicing and UI/UX design for USAID application, focusing on clean layout implementation and user-friendly interaction patterns.",
-    category: "Frontend Development",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
-    link: "#"
+    title: "Golden Lion – Branding & Product Graphics",
+    description: "Designed marketing and promotional graphics for e-vehicle products (e-scooty). Created product brochures, defined brand typography and color schemes aligned with the brand vision.",
+    category: "Graphic Design",
+    image: "/assets/escooty.png",
+    link: "https://dribbble.com/shots/23942588-e-scooty-brochure-design"
+  },
+  {
+    id: 7,
+    title: "Travel Website",
+    description: " UI/UX design for a Travel Website. Designed full application flow with a focus on user control, navigation, and responsiveness.",
+    category: "UI/UX Design",
+    image: "/assets/travel.png",
+    link: "https://dribbble.com/shots/25617693-Travel-Website-Design"
+  },
+    {
+    id: 8,
+    title: "Wellnes Company Website",
+    description: " UI/UX design for a dubai based Wellnes company. Designed full website flow with a focus on user control, navigation, and responsiveness.",
+    category: "UI/UX Design",
+    image: "/assets/wellness.png",
+    link: "https://dribbble.com/shots/25618596-Wellness-website-UI-Design-SaaS-Website-Design"
+  },
+  {
+    id: 9,
+    title: "AI Work Managemnet System",
+      description: " Ad Campaign for a AI Work Managemnet System. Designed ad campaign post for social media.",
+    category: "Graphic Design",
+    image: "/assets/project-img2.png",
+    link: "https://www.behance.net/gallery/220701291/AI-project-manager-ad-campaign"
+  },
+  {
+    id: 10,
+    title: "Tihar festive Greeting Campaign",
+      description: " Tihar festive greeting - Social media posts.",
+    category: "Graphic Design",
+    image: "/assets/tihar.png",
+    link: "https://www.behance.net/gallery/212755219/Happy-Tihar-Tihar-greetings"
+  },
+  {
+    id: 11,
+    title: "Website Redesign - Christmas themed",
+    description: "Redesigned a website for a Christmas themed website. ",
+    category: "UI/UX Design",
+    image: "/assets/refurbished.png",
+    link: "https://dribbble.com/shots/25618344-Christmas-Themed-Landing-Page-UI-design-Revamped"
+    },
+    {
+    id: 12,
+    title: "Christmas themed - Discount Coupon ",
+    description: "Discount post for Christmas. ",
+    category: "Graphic Design",
+    image: "/assets/project-img3.png",
+    link: "https://www.behance.net/gallery/219108961/Christmas-Offer-Banner"
   }
 ];
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [isInView, setIsInView] = useState(false);
-  const categories = ['All', 'UI/UX Design', 'Graphic Design', 'Frontend Development'];
+  const categories = ['All', 'UI/UX Design', 'Graphic Design'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 

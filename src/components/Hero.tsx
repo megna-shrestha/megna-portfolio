@@ -71,8 +71,8 @@ const Hero = () => {
             }`}
             style={{ animationDelay: "0.8s" }}
           >
-            Creative and detail-oriented UI/UX Engineer with over 3 years of experience in web and mobile design,
-            branding, and responsive frontend development. Skilled in wireframing, prototyping, and user-centric design
+            Creative and detail-oriented UI/UX Designer with over 3 years of experience in web and mobile design,
+            branding, and graphic design. Skilled in wireframing, prototyping, and user-centric design
             practices using tools like Figma and Adobe Creative Suite. Proficient in HTML, CSS, and JavaScript.
           </p>
           

@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { ExternalLink } from 'lucide-react';
@@ -36,9 +35,9 @@ const ProjectCard = ({ title, description, category, image, link, delay }: Proje
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
           <div className={cn(
-            "absolute inset-0 bg-gradient-to-t from-dark-card to-transparent opacity-80",
+            "absolute inset-0 bg-gradient-to-t from-dark-card to-transparent opacity-90",
             "transition-opacity duration-300",
-            isHovered ? "opacity-90" : "opacity-50"
+            isHovered ? "opacity-100" : "opacity-70"
           )}></div>
         </div>
         
@@ -52,7 +51,7 @@ const ProjectCard = ({ title, description, category, image, link, delay }: Proje
             {title}
           </h3>
           <p className={cn(
-            "text-dark-muted overflow-hidden transition-all duration-300",
+            "text-white overflow-hidden transition-all duration-300",
             isHovered ? "max-h-24 opacity-100" : "max-h-0 opacity-0"
           )}>
             {description}
@@ -66,6 +65,7 @@ const ProjectCard = ({ title, description, category, image, link, delay }: Proje
                 "mt-3 text-dark-accent1 p-0 h-auto transform transition-all duration-300",
                 isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
               )}
+              onClick={() => window.open(link, '_blank')}
             >
               <ExternalLink size={16} className="mr-1" />
               View Project

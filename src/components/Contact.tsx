@@ -171,13 +171,13 @@ const Contact = () => {
                 <a href="https://github.com/megna-shrestha" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-dark-accent1/10 text-dark-accent1 hover:bg-dark-accent1/20 transition-colors">
                   <Github size={20} />
                 </a>
-                <a href="https://dribble.com/megna-1" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-dark-accent1/10 text-dark-accent1 hover:bg-dark-accent1/20 transition-colors">
+                <a href="https://dribbble.com/megna-1" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-dark-accent1/10 text-dark-accent1 hover:bg-dark-accent1/20 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path>
                   </svg>
                 </a>
-                <a href="https://behance.net/megnashrestha1" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-dark-accent1/10 text-dark-accent1 hover:bg-dark-accent1/20 transition-colors">
+                <a href="https://www.behance.net/megnashrestha1" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-dark-accent1/10 text-dark-accent1 hover:bg-dark-accent1/20 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M6 8h6m-6 4h10m-6 4h4"></path>
                     <rect width="8" height="8" x="2" y="8" rx="1"></rect>
@@ -209,7 +209,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="bg-dark-background border-dark-muted/30 focus:border-dark-accent1"
-                    placeholder="John Doe"
+                    placeholder="First Last"
                   />
                 </div>
                 <div className="space-y-2">
@@ -224,7 +224,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="bg-dark-background border-dark-muted/30 focus:border-dark-accent1"
-                    placeholder="john@example.com"
+                    placeholder="name@example.com"
                   />
                 </div>
               </div>
