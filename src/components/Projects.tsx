@@ -10,7 +10,7 @@ const projects = [
     title: "RCA E-commerce Website Design",
     description: "Defined brand guidelines, color palette, typography, spacing system, icons, and responsive grid layout. Created complete website flow, wireframes and high-fidelity interactive prototypes using Figma.",
     category: "UI/UX Design",
-    image: "/assets/admin.png",
+    image: "/assets/RRca.jpg",
     link: "#"
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     title: "Dragon Pain Relief Website Revamp",
     description: "Revamped the existing web UI to enhance visual consistency and user experience. Redesigned shop and product pages to optimize customer funneling and improve SEO-friendly content layout.",
     category: "UI/UX Design",
-    image: "/assets/admin.png",
+    image: "/assets/dpr.jpg",
     link: "#"
   },
   {
