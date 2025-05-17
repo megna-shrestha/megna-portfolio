@@ -58,7 +58,7 @@ const projects = [
     title: "Travel Website",
     description: " UI/UX design for a Travel Website. Designed full application flow with a focus on user control, navigation, and responsiveness.",
     category: "UI/UX Design",
-    image: "/assets/travel.png",
+    image: "/assets/mockuptt.jpg",
     link: "https://dribbble.com/shots/25617693-Travel-Website-Design"
   },
     {
@@ -66,7 +66,7 @@ const projects = [
     title: "Wellnes Company Website",
     description: " UI/UX design for a dubai based Wellnes company. Designed full website flow with a focus on user control, navigation, and responsiveness.",
     category: "UI/UX Design",
-    image: "/assets/wellness.png",
+    image: "/assets/vyana.jpg",
     link: "https://dribbble.com/shots/25618596-Wellness-website-UI-Design-SaaS-Website-Design"
   },
   {
@@ -90,7 +90,7 @@ const projects = [
     title: "Website Redesign - Christmas themed",
     description: "Redesigned a website for a Christmas themed website. ",
     category: "UI/UX Design",
-    image: "/assets/refurbished.png",
+    image: "/assets/med.jpg",
     link: "https://dribbble.com/shots/25618344-Christmas-Themed-Landing-Page-UI-design-Revamped"
     },
     {
@@ -100,6 +100,14 @@ const projects = [
     category: "Graphic Design",
     image: "/assets/project-img3.png",
     link: "https://www.behance.net/gallery/219108961/Christmas-Offer-Banner"
+  },
+  {
+    id: 13,
+    title: "Kiosk UI Design ",
+    description: "Kiosk UI design for banking system in nepal. ",
+    category: "UI/UX Design",
+    image: "/assets/kiosk.jpg",
+    link: "https://dribbble.com/shots/25617885-Kiosk-Design-for-banking-system"
   }
 ];
 
