@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 import { Button } from '@/components/ui/button';
@@ -114,11 +113,16 @@ const projects = [
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [isInView, setIsInView] = useState(false);
+  const [visibleProjects, setVisibleProjects] = useState(6); // Show 6 projects initially (2 rows)
   const categories = ['All', 'UI/UX Design', 'Graphic Design'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 
     : projects.filter(project => project.category === activeFilter);
+
+  const handleLoadMore = () => {
+    setVisibleProjects(prev => prev + 6); // Load 6 more projects
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -177,7 +181,10 @@ const Projects = () => {
                   ? "bg-dark-accent1 hover:bg-dark-accent1/90" 
                   : "border-dark-muted/30 text-dark-muted hover:bg-dark-accent1/10 hover:text-dark-accent1"
               )}
-              onClick={() => setActiveFilter(category)}
+              onClick={() => {
+                setActiveFilter(category);
+                setVisibleProjects(6); // Reset visible projects when filter changes
+              }}
             >
               {category}
             </Button>
@@ -185,7 +192,7 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProjects.map((project, index) => (
+          {filteredProjects.slice(0, visibleProjects).map((project, index) => (
             <ProjectCard
               key={project.id}
               title={project.title}
@@ -197,6 +204,17 @@ const Projects = () => {
             />
           ))}
         </div>
+
+        {visibleProjects < filteredProjects.length && (
+          <div className="text-center mt-12">
+            <Button
+              onClick={handleLoadMore}
+              className="bg-dark-accent1 hover:bg-dark-accent1/90"
+            >
+              Load More
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );
