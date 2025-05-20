@@ -137,7 +137,7 @@ const About = () => {
               style={{ animationDelay: "0.6s" }}
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = '/assets/resume.pdf'; // Make sure to add your resume file in public/assets folder
+                link.href = '/assets/megna-resume-UIUX.pdf'; // Make sure to add your resume file in public/assets folder
                 link.download = 'Megna_Shrestha_Resume.pdf';
                 document.body.appendChild(link);
                 link.click();
