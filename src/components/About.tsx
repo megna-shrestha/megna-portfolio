@@ -135,7 +135,14 @@ const About = () => {
                 isInView && "animate-fade-in"
               )}
               style={{ animationDelay: "0.6s" }}
-              onClick={() => window.open('https://dribbble.com/megna-1', '_blank')}
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/assets/resume.pdf'; // Make sure to add your resume file in public/assets folder
+                link.download = 'Megna_Shrestha_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
             >
               <Download size={16} className="mr-2" /> Download CV
             </Button>
