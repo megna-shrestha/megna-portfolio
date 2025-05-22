@@ -10,7 +10,7 @@ const projects = [
     description: "Defined brand guidelines, color palette, typography, spacing system, icons, and responsive grid layout. Created complete website flow, wireframes and high-fidelity interactive prototypes using Figma.",
     category: "UI/UX Design",
     image: "/assets/RRca.jpg",
-    link: "#"
+    link: "https://dribbble.com/shots/26058044-E-commerce-UI-UX-Design-with-detailed-case-study"
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const projects = [
     description: "Revamped the existing web UI to enhance visual consistency and user experience. Redesigned shop and product pages to optimize customer funneling and improve SEO-friendly content layout.",
     category: "UI/UX Design",
     image: "/assets/dpr.jpg",
-    link: "#"
+    link: "https://dribbble.com/megna-1"
   },
   {
     id: 3,
